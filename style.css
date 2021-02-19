@@ -1,0 +1,167 @@
+:root{
+    --gray-color:  #231f20;
+    --font-color: #eeeeee;
+    --green-color: rgb(5, 197, 156);
+}
+
+/* removes the horizontal scroll issue on larger screen but not mobile version */
+*{
+    max-width: 100%;
+}
+
+/* body */
+body {
+    background: #eeeeee;
+    font-family: 'Lato', sans-serif;
+    padding: 0px !important;
+    margin: 0px !important;
+    font-size:15px;
+
+}
+
+/* logo png */
+.logo-ft{
+    width: 50%;
+    margin-bottom: 13px;
+}
+.logo-header{
+    width: 210px;
+    /* height: 100px; */
+}
+
+/* top nav bar */
+.navbar{
+    background-color: var(--font-color) !important;
+}
+.nav-link{
+    font-size: 18px;
+    color: var(--green-color) !important;
+    transition: transform .2s; 
+    padding: 7px 20px !important;
+    
+}
+.nav-link:hover{
+    background-color: var(--green-color);
+    color: #eeeeee !important;
+    
+
+}
+.navbar-toggler{
+    background-color: black !important;
+}
+
+/* header */
+header{
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("./pic1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+.welcome-text{
+    position: absolute;
+    margin-top: 22rem;
+    margin-left: 5rem;
+    color: var(--font-color);
+    text-align: center;
+    line-height: 3rem;
+}
+
+
+.btn-main{
+    border: 1px solid var(--green-color);
+    text-decoration: none;
+    color: var(--green-color);
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 8px;
+}
+.btn-main:hover{
+    text-decoration: none;
+    color: var(--font-color);
+    background-color: var(--green-color);
+}
+
+/* about section */
+#about-section{
+    width: 70%;
+    margin: auto;
+}
+.about-section1{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.section-title{
+    margin-bottom: 80px;
+    color: var(--green-color);
+}
+/* footer */
+footer{
+    margin-top: 200px;
+    padding-bottom: 50px;
+    color: var(--font-color);
+    background-color: var(--gray-color);
+}
+.footer-list{
+    list-style-type: none;
+    
+}
+.contact{
+    padding: 0 6px;
+    word-spacing: 0.6rem;
+    line-height: 1.5rem;
+}
+address{
+    display: flex;
+    flex-direction: row;
+}
+.location{
+    margin-right: 1.5rem;
+}
+
+.footer-title{
+    margin-top: 30px;
+}
+.footer-logo{
+    margin-top: 20px;
+}
+.footer-links li a, .footer-links li{
+    color: var(--green-color);
+    line-height: 2rem;
+}
+.btn-ft{
+    color: var(--font-color) !important;
+    border: 1px solid var(--font-color) !important;
+    border-left: none !important;
+}
+.logo-ft{
+    width: 220px;
+}
+
+/* error page */
+.error{
+    margin-top: 15rem;
+    height: 30vh;
+
+}
+.errors{
+  text-align: center;
+}
+/* media queries */
+@media only screen and (max-width: 780px){
+    .welcome-text{
+        margin-left: auto;
+        margin-top: 18rem;
+    }
+    .cohort-paragraph{
+        width: 95%;
+        margin: auto;
+    }
+    .cohort-dates{
+        width: 95%;
+        margin: auto;
+    }
+}
+
